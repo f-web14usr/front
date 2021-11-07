@@ -1,0 +1,44 @@
+.btn{
+    height: 40px;
+    padding: 0 24px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight:500 ;
+    line-height: 20px;
+ 
+}
+
+.btn-filled-primary{
+    background-color: #6750A4;
+    color:#FFFFFF;
+    border:none;
+    font-family: Roboto Medium;
+         
+}
+.btn-outlined-button{
+    background-color: #FFFBFE;
+    border: 1px solid #79747E;
+    color:#6750A4;
+    }
+.btn i{
+margin-right: 8px;
+   font-size: 18px;
+}
+.btn-filled-tonal-button{
+background-color: #E8DEF8;
+color: #1E192B;
+border: none;
+}
+.btn-text-button{
+    background: 0%;
+    background-color: none;
+    border: none;
+    color: #6750A4;
+    padding: 0 12px;
+}
+.btn-text-button i{
+    margin-right: 8px;
+}
+.btn *{
+    vertical-align: middle;
+}
