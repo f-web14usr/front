@@ -1,0 +1,98 @@
+:lang(fa){
+    direction: rtl;
+    text-align: right;
+  
+}
+body{
+    margin-right: 30%;
+}
+label {
+  
+   padding-bottom: 8px;
+    font-size: 16px;
+    color: hsla(0, 0%, 0%, 60%);
+    display: block;
+}
+
+.outline-text{
+border: 1px solid hsla(0, 0%, 0%, 12%) ;
+color: hsla(0, 0%, 0%,87%);
+background-color: #FFFFFF;
+font-size: 16px;
+border-radius: 4px;
+width: 248px;/*width: 280 padding-top,padding-buttom:16+16=32   280-32=248    */
+height: 8px;/*height: 40 padding-top,padding-buttom:16+16=32   40-32=8     */
+padding: 16px;
+vertical-align: middle;
+cursor: default;
+}
+.outline-text:focus{
+    border: 2px solid #6200EE ;
+  outline: none;
+  cursor: text;
+}
+.outline-text:active{
+    
+    border: 1px solid rgba(0, 0, 0, 0.6);
+  cursor: default;
+}
+.outline-text:hover{
+    border:1px solid rgba(0, 0, 0, 0.87);
+cursor: pointer;
+}
+.outline-text:disabled{
+    border: 1px solid  rgb(0, 0, 0,.12);
+    color: rgb(0, 0, 0,.12);
+ cursor: default;
+}
+
+.help-label{
+    
+ color: hsla(0, 0%, 0%, 60%);
+ font-size: 12px;
+ height: 16px;
+ text-align: right;
+ vertical-align: bottom;
+ margin-right:24px;
+}
+.text-with-icon {
+position: relative;
+width: 248px;
+display: inline-block;
+}
+.text-with-icon i{
+     position: absolute;
+     padding-right: 12px;
+      top: 40px;
+      bottom: 16px;
+      color: hsla(0, 0%, 0%,87%);  
+   width: 6;
+  
+}
+input[ type="email"]{
+text-align: left;
+padding-left: 16px;
+display: inline-block;
+}
+ input:invalid{
+border: 2px solid #B00020;
+
+}
+.currency{
+   text-align: left;
+   padding-left: 16px;
+   color: hsla(0, 0%, 0%, 60%);
+}
+.btn{
+    height: 40px;
+    padding: 0 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight:500 ;
+    line-height: 20px;
+ vertical-align: top;
+ background-color:#6200EE;
+ color: #FFFFFF;
+ border: none;
+ cursor: pointer;
+}
