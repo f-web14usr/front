@@ -1,0 +1,132 @@
+:lang(fa){
+    direction: rtl;
+    text-align: center;
+  
+}
+body{
+    margin-top: 20%;
+
+}
+label {
+  
+   padding-bottom: 8px;
+    font-size: 16px;
+    color: hsla(0, 0%, 0%, 60%);
+    display: block;
+}
+
+.outline-text{
+border: 1px solid hsla(0, 0%, 0%, 12%) ;
+color: hsla(0, 0%, 0%,87%);
+background-color: #FFFFFF;
+font-size: 16px;
+border-radius: 4px;
+width: 248px;/*width: 280 padding-top,padding-buttom:16+16=32   280-32=248    */
+height: 8px;/*height: 40 padding-top,padding-buttom:16+16=32   40-32=8     */
+padding: 16px;
+vertical-align: middle;
+
+}
+.outline-text:focus{
+    border: 2px solid #6200EE ;
+  outline: none;
+
+}
+.outline-text:active{
+    
+    border: 1px solid rgba(0, 0, 0, 0.6);
+ 
+}
+.outline-text:hover{
+    border:1px solid rgba(0, 0, 0, 0.87);
+
+}
+.outline-text:disabled{
+    border: 1px solid  rgb(0, 0, 0,.12);
+    color: rgb(0, 0, 0,.12);
+
+}
+
+.help-label{
+    
+ color: hsla(0, 0%, 0%, 60%);
+ font-size: 12px;
+ height: 16px;
+ text-align: right;
+ vertical-align: bottom;
+ margin: right -60px;
+}
+.text-with-icon {
+position: relative;
+width: 248px;
+display: inline-block;
+}
+
+  
+  
+
+input[ type="email"],input[ type="password"]{
+text-align: center;
+padding-left: 16px;
+display: inline-block;
+
+}
+ input:invalid{
+border: 2px solid #B00020;
+content-visibility: "خطا";
+
+}
+.currency{
+   text-align: left;
+   padding-left: 16px;
+   color: hsla(0, 0%, 0%, 60%);
+}
+.btn{
+    height: 40px;
+    padding: 8px 24px;
+    border-radius: 4px;
+     margin-left:200px;
+ vertical-align: baseline;
+ background-color:#6200EE;
+ color: #FFFFFF;
+ border: none;
+ cursor: pointer;
+ text-align: right;
+}
+.input-icons i {
+    position: absolute;
+}
+
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.icon {
+    padding: 14px 5px 0px 5px;
+    
+    color: #6200EE;
+    min-width: 50px;
+    
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid hsla(0, 0%, 0%, 12%) ;
+color: hsla(0, 0%, 0%,87%);
+background-color: #FFFFFF;
+font-size: 16px;
+border-radius: 4px;
+width: 248px;/*width: 280 padding-top,padding-buttom:16+16=32   280-32=248    */
+height: 8px;/*height: 40 padding-top,padding-buttom:16+16=32   40-32=8     */
+padding: 16px;
+vertical-align: middle;
+
+}
+
+    

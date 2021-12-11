@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+	
+		<form >
+			
+			<div class="input-icons"id="container">
+
+               <i class="fas fa-eye  icon  " onclick="pass()" id="eye"></i>	
+            
+	            <input class="outline-text input-field "type="password" id="password"placeholder="رمز ورود">
+				<br>
+				<br>			
+				<button class="btn">ارسال</button>
+			</div>
+			
+
+		
+			
+		</form>
+<script type="text/javascript">
+function pass() {
+
+
+var mytype=document.getElementById("password").type;
+var myclass=document.getElementById("eye");
+
+
+if(mytype=="password"){
+	document.getElementById("password").type="text";
+    myclass.setAttribute('class','fas fa-eye-slash icon');
+}
+else if(mytype=="text"){
+document.getElementById("password").type="password";
+myclass.setAttribute('class','fas fa-eye  icon');
+}
+}
+
+</script>
+</body>
+
+
+</html>
