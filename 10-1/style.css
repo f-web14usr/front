@@ -1,0 +1,253 @@
+
+:lang(fa)
+{
+    direction: rtl;
+}
+body{
+    background-color: burlywood;
+}
+@media screen and (min-device-width: 1024px){
+.card{
+   
+    border-radius: 12px;
+    width: 600px;
+    height: fit-content;
+    padding-bottom: 8px;
+}
+.link-card{
+    text-decoration: none;
+}
+
+.filled-card{
+       background-color: #ffffff;
+    }
+.filled-card:hover{
+ box-shadow: #000 0px 0px 3px ;
+
+}
+.filled-card:focus{
+   color: #4a1f6b;
+    opacity: 50%;
+}
+.filled-card:active{
+    background-color: hsl(277, 17%, 85%); 
+    box-shadow: none;
+    
+}
+
+
+
+.card-img-top{
+    width: 100%;
+   padding: initial;
+   overflow: hidden;
+   border-top-left-radius: 12px;
+   border-top-right-radius: 12px;
+}
+
+.card-title{
+    font-size: 18px;
+    color: #000;
+    font-family: sans-serif;
+    margin: 0%;
+
+}
+.card-subtitle{
+    font-size: 16px;
+    color: rgba(28, 27, 31,.8);
+    margin-bottom: 8px;
+    margin-top: 0px;
+    font-family: sans-serif;
+}
+.card-text{
+    font-size: 14px;
+    color: rgba(28, 27, 31,.8);
+    font-family: sans-serif;
+    margin-bottom: 24px;
+}
+
+.btn{
+   border-radius: 4px;
+ 
+ background-color:#6200EE;
+ color: #FFFFFF;
+ border: none;
+ cursor: pointer;
+ text-align: right;
+}
+footer >a.btn{
+    display: inline-block;
+    text-decoration: none;
+     height: 36px;
+     width: 90%;
+     margin-right: 5%;
+     text-align: center;
+     vertical-align: middle;
+     font-family:cursive;
+     font-size: 20px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: auto ;
+   
+    grid-gap: 4px;
+    grid-column: 1/2;
+    width: 400px;
+    
+    max-width: 60%;
+    background-color: #FFFFFF;
+}
+section{
+    margin-right: 16px;
+}
+
+.card-container>header{
+    width: 100%;
+    
+   height: auto;
+}
+.card-container>footer{
+    height:40px;
+   padding: 0;
+}
+.card-container>main {
+    margin-right: 16px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and  (max-device-width: 1024px){
+    .card{
+       
+        border-radius: 12px;
+         width : 500px;
+        height : 200px;
+        padding-bottom: 8px;
+    }
+    .link-card{
+        text-decoration: none;
+    }
+    
+    .filled-card{
+           background-color: #ffffff;
+        }
+    .filled-card:hover{
+     box-shadow: #000 0px 0px 3px ;
+    
+    }
+    .filled-card:focus{
+       color: #4a1f6b;
+        opacity: 50%;
+    }
+    .filled-card:active{
+        background-color: hsl(277, 17%, 85%); 
+        box-shadow: none;
+        
+    }
+    
+    
+    
+    .card-img-top{
+        height: 100%;
+        width: 170px;
+       padding: initial;
+       overflow: hidden;
+       border-radius: 0px;
+       border-bottom-right-radius: 12px;
+       border-top-right-radius: 12px;
+
+    }
+    
+    .card-title{
+        font-size: 18px;
+        color: #000;
+        font-family: sans-serif;
+        margin: 0%;
+    
+    }
+    .card-subtitle{
+        font-size: 16px;
+        color: rgba(28, 27, 31,.8);
+        margin-bottom: 8px;
+        margin-top: 0px;
+        font-family: sans-serif;
+    }
+    .card-text{
+        font-size: 14px;
+        color: rgba(28, 27, 31,.8);
+        font-family: sans-serif;
+        margin-bottom: 0px;
+    }
+    
+    .btn{
+       border-radius: 4px;
+     
+     background-color:#6200EE;
+     color: #FFFFFF;
+     border: none;
+     cursor: pointer;
+     text-align: right;
+    }
+    footer >a.btn{
+        display: inline-block;
+        text-decoration: none;
+         height: 36px;
+         width: 120px;
+        
+         text-align: center;
+         vertical-align: bottom;
+         font-family:serif;
+         font-size: 16px;
+    }
+    
+    .card-container{
+        display: grid;
+        grid-template-columns: auto auto auto; 
+         grid-template-rows: auto auto 70%;
+        grid-gap: 8px 8px;
+        overflow: hidden;
+        width: 600px;
+        height: 200px;
+        background-color: #FFFFFF;
+    }
+    section{
+        margin-right: 16px;
+        grid-column:2/span 2 ;
+     
+    }
+    
+    .card-container>header{
+        height: 210px;
+        grid-row:1/ span 4 ;
+        
+       
+    }
+    .card-container>footer{
+        height:50px;
+        margin-right: 16px;
+       grid-column:2/span 2 ;
+    
+    }
+    .card-container>main {
+        margin:16px 16px 8px ;
+        grid-column:2/span 3 ;
+       
+    }
+}
+
+
+
+
+
+
+
+
