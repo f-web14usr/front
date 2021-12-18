@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+	<style>
+   
+	</style>
+	
+		<form >
+			
+			<div class="input-icons"id="container">
+
+         
+            
+	            <input class="outline-text"type="number" id="numb"placeholder=" عددی بین 10 تا 20 وارد کنید"min="10" max="20"step="2" required >
+				<br>
+				<span id="error"class="error-label"></span>
+				<br>			
+				<button class="btn">ارسال</button>
+			</div>
+			
+
+		
+			
+		</form>
+<script type="text/javascript">
+let numberlist=document.querySelectorAll("[type='number']");
+for(let text of numberlist)
+{
+	text.addEventListener('blur',numbervalid);
+}
+function numbervalid(e){
+
+if(this.validity.rangeUnderflow)
+{
+	
+this.classList.remove("outline-text:focus");
+this.classList.add("error_input");
+var input_error=document.getElementById("error");
+var error =input_error.innerHTML="عدد وارد شده کمتر از 10 است";
+this.setCustomValidity(error);
+this.reportValidity();
+}
+ else if(this.validity.rangeOverflow)
+{
+	this.classList.remove("outline-text:focus");
+
+	this.classList.add("error_input");
+var input_error=document.getElementById("error");
+var error=input_error.innerHTML="  عدد وارد شده بیشتر  از 20 است ";
+this.setCustomValidity(error);
+this.reportValidity();
+}
+else if(this.validity.stepMismatch)
+{
+	this.classList.remove("outline-text:focus");
+
+	this.classList.add("error_input");
+var input_error=document.getElementById("error");
+var error =input_error.innerHTML="عدد واردشده در step نیست";
+this.setCustomValidity(error);
+this.reportValidity();
+}
+else if(this.validity.valueMissing)
+{
+	this.classList.remove("outline-text:focus");
+
+	this.classList.add("error_input");
+var input_error=document.getElementById("error");
+var error =input_error.innerHTML="  فیلد باید پرشود  ";
+this.setCustomValidity(error);
+this.reportValidity();
+}
+else if(this.validity.typeMismatch)
+{
+	this.classList.remove("outline-text:focus");
+
+	this.classList.add("error_input");
+var input_error=document.getElementById("error");
+var error =input_error.innerHTML="   این فیلد عددی است   ";
+this.setCustomValidity(error);
+this.reportValidity();
+}
+else
+{
+	this.setCustomValidity('');
+this.reportValidity();
+}
+}
+
+
+
+</script>
+</body>
+
+
+</html>
