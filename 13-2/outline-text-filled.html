@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+	
+		<form >
+			
+			<div class="container"id="">
+
+				<label class="label" > </label>
+				  <br>
+	            <input class="outline-text  "      type="text" id="text"placeholder=" متن ورودی">
+				<br>
+				<br>			
+				<button class="btn">ارسال</button>
+			</div>
+			
+
+		
+			
+		</form>
+
+<script>
+let text_input=document.querySelector(".outline-text");
+let label=document.querySelector("label")
+console.log(label);
+text_input.addEventListener('focus',top_label);
+text_input.addEventListener('blur',hidden_label);
+
+function top_label(){
+label.classList.add("text-label");
+
+
+
+}
+function hidden_label(){
+
+	label.classList.remove("text-label");
+
+
+}
+
+</script>
+
+
+
+</body>
+
+
+</html>
